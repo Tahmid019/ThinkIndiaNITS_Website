@@ -1,39 +1,41 @@
 <script lang="ts">
-    export let name: string;
-    export let position: string;
-    export let url: string;
-    // export let facebook?: string;
-    // export let instagram?: string;
-    // export let linkedin?: string;
-    // export let github?: string;
-    export let themeMode: 'dark' | 'light';
-  </script>
-  
-  <div
-    class="profile-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 flex flex-col items-center transition-transform transform hover:scale-105"
-  >
-    <!-- Profile Image -->
-    <div class="img mb-4 w-24 h-24">
-      <img
-        src={url}
-        alt={`${name}'s profile`}
-        class="w-full h-full rounded-full object-cover border-4 {themeMode === 'dark' ? 'border-gray-600' : 'border-gray-300'}"
-      />
-    </div>
-  
-    <!-- Name and Position -->
-    <div class="caption text-center">
-      <h3 class="text-lg font-bold {themeMode === 'dark' ? 'text-white' : 'text-gray-800'}">
-        {name}
-      </h3>
-      <p class="text-sm font-medium {themeMode === 'dark' ? 'text-gray-400' : 'text-gray-600'}">
-        {position}
-      </p>
-    </div>
-  
-    <!-- Social Links -->
-    <div class="social-links flex justify-center mt-4 space-x-4">
-      <!-- {#if facebook}
+	export let name: string;
+	export let position: string;
+	export let url: string;
+	// export let facebook?: string;
+	// export let instagram?: string;
+	// export let linkedin?: string;
+	// export let github?: string;
+	export let themeMode: 'dark' | 'light';
+</script>
+
+<div
+	class="profile-card flex transform flex-col items-center rounded-lg bg-white p-6 shadow-lg transition-transform hover:scale-105 dark:bg-gray-800"
+>
+	<!-- Profile Image -->
+	<div class="img mb-4 h-24 w-24">
+		<img
+			src={url}
+			alt={`${name}'s profile`}
+			class="h-full w-full rounded-full border-4 object-cover {themeMode === 'dark'
+				? 'border-gray-600'
+				: 'border-gray-300'}"
+		/>
+	</div>
+
+	<!-- Name and Position -->
+	<div class="caption text-center">
+		<h3 class="text-lg font-bold {themeMode === 'dark' ? 'text-white' : 'text-gray-800'}">
+			{name}
+		</h3>
+		<p class="text-sm font-medium {themeMode === 'dark' ? 'text-gray-400' : 'text-gray-600'}">
+			{position}
+		</p>
+	</div>
+
+	<!-- Social Links -->
+	<div class="social-links mt-4 flex justify-center space-x-4">
+		<!-- {#if facebook}
         <a
           href={facebook}
           target="_blank"
@@ -76,12 +78,11 @@
           <i class="fab fa-github text-xl"></i>
         </a>
       {/if} -->
-    </div>
-  </div>
-  
-  <style>
-    .profile-card {
-      max-width: 300px;
-    }
-  </style>
-  
+	</div>
+</div>
+
+<style>
+	.profile-card {
+		max-width: 300px;
+	}
+</style>

@@ -2,7 +2,7 @@
 	import { onMount, tick } from 'svelte';
 
 	import BlurFade from './ui/BlurFade.svelte';
-	
+
 	const timelineItems = [
 		{
 			year: '2021',
@@ -79,19 +79,23 @@
 			<BlurFade delay={0.25}>
 				{#each timelineItems as item, index}
 					<div
-						
 						class="timeline-item relative mb-12 flex translate-y-10 flex-col items-center opacity-0 transition-all duration-700 ease-out md:flex-row md:items-start"
 						class:opacity-100={visibleItems.has(index)}
 						class:translate-y-0={visibleItems.has(index)}
 					>
-						
 						<!-- Alternate Sides on Large Screens -->
 						<div class="w-full px-4 md:w-1/2 {index % 2 === 0 ? 'md:order-1' : ''}">
 							<div
-								class="group rounded-lg bg-slate-900/35 border border-slate-800 p-6 shadow-lg transition-all backdrop-blur-md duration-300 hover:scale-105 hover:shadow-xl hover:bg-white"
+								class="group rounded-lg border border-slate-800 bg-slate-900/35 p-6 shadow-lg backdrop-blur-md transition-all duration-300 hover:scale-105 hover:bg-white hover:shadow-xl"
 							>
-								<h3 class="mb-2 text-2xl font-bold transition-all duration-300 text-white group-hover:text-gray-900">{item.title}</h3>
-								<p class="text-gray-300 transition-all duration-300 group-hover:text-gray-700">{item.description}</p>
+								<h3
+									class="mb-2 text-2xl font-bold text-white transition-all duration-300 group-hover:text-gray-900"
+								>
+									{item.title}
+								</h3>
+								<p class="text-gray-300 transition-all duration-300 group-hover:text-gray-700">
+									{item.description}
+								</p>
 							</div>
 						</div>
 
@@ -100,7 +104,7 @@
 							class="-translate-x-1/6 absolute left-1/2 flex transform justify-center px-4 md:static md:w-1/2"
 						>
 							<span
-								class="rounded-full bg-slate-900/35 border border-slate-800 px-6 py-2 text-lg font-semibold text-white hover:text-black shadow-md transition-all duration-300 hover:scale-110 hover:bg-white"
+								class="rounded-full border border-slate-800 bg-slate-900/35 px-6 py-2 text-lg font-semibold text-white shadow-md transition-all duration-300 hover:scale-110 hover:bg-white hover:text-black"
 							>
 								{item.year}
 							</span>

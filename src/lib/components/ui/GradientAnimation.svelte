@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { cn } from '$lib/utils.js';
+	import { cn } from '$lib/utils.js';
 	import { onMount } from 'svelte';
 
 	export let gradientBackgroundStart: string | null = 'rgb(0, 0, 0)';

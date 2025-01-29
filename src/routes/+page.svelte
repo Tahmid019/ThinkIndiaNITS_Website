@@ -16,5 +16,5 @@
 		<Timeline />
 		<ImageCarousel />
 	</div>
-	<Footer/>
+	<Footer />
 </GradientAnimation>

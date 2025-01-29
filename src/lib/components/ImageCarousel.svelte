@@ -17,9 +17,7 @@
 		currentIndex = (currentIndex + 1) % images.length;
 	};
 
-	const prevSlide = () => {
-		currentIndex = (currentIndex - 1 + images.length) % images.length;
-	};
+
 
 	onMount(() => {
 		const interval = setInterval(nextSlide, 5000);
@@ -31,21 +29,25 @@
 	<div class="container mx-auto px-6">
 		<BlurFade delay={0.25}>
 			<h2
-				class="mb-12 text-center text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white "
+				class="mb-12 text-center text-3xl font-bold text-white sm:text-4xl lg:text-5xl xl:text-6xl"
 			>
 				Flaskbacks
 			</h2>
 		</BlurFade>
-    <div class="relative">
-      <Marquee pauseOnHover class="[--duration:50s]">
-        {#each Array(3).fill(images).flat() as item, i (i)}
-        <div class="flex flex-row items-center gap-2">
-          <img class="w-60 rounded-md grayscale hover:grayscale-0" alt="" src={item} />
-        </div>
-        {/each}
-      </Marquee>
-      <div class="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-black to-transparent pointer-events-none"></div>
-      <div class="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-black to-transparent pointer-events-none"></div>
-    </div>
+		<div class="relative">
+			<Marquee pauseOnHover class="[--duration:50s]">
+				{#each Array(3).fill(images).flat() as item, i (i)}
+					<div class="flex flex-row items-center gap-2">
+						<img class="w-60 rounded-md grayscale hover:grayscale-0" alt="" src={item} />
+					</div>
+				{/each}
+			</Marquee>
+			<div
+				class="pointer-events-none absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-black to-transparent"
+			></div>
+			<div
+				class="pointer-events-none absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-black to-transparent"
+			></div>
+		</div>
 	</div>
 </section>
