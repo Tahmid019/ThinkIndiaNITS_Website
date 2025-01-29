@@ -19,7 +19,7 @@
 		className
 	)}
 >
-	{#each { length: repeat } as _}
+	{#each { length: repeat } as i}
 		<div
 			class={cn('flex shrink-0 justify-around [gap:var(--gap)]', {
 				'animate-marquee flex-row': !vertical,
@@ -28,7 +28,7 @@
 				'[animation-direction:reverse]': reverse
 			})}
 		>
-			<slot>Default</slot>
+			<slot>{i}</slot>
 		</div>
 	{/each}
 </div>

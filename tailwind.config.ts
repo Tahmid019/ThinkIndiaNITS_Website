@@ -1,5 +1,4 @@
 import type { Config } from 'tailwindcss';
-import flattenColorPalette from 'tailwindcss/lib/util/flattenColorPalette';
 
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
@@ -34,16 +33,5 @@ export default {
 		}
 	},
 
-	plugins: [addVariablesForColors]
+	plugins: []
 } satisfies Config;
-
-function addVariablesForColors({ addBase, theme }: any) {
-	let allColors = flattenColorPalette(theme('colors'));
-	let newVars = Object.fromEntries(
-		Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
-	);
-
-	addBase({
-		':root': newVars
-	});
-}

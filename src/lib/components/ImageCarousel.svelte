@@ -17,8 +17,6 @@
 		currentIndex = (currentIndex + 1) % images.length;
 	};
 
-
-
 	onMount(() => {
 		const interval = setInterval(nextSlide, 5000);
 		return () => clearInterval(interval);
