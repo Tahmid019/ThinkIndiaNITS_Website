@@ -1,3 +1,23 @@
-{
-	"data": {}
-}
+
+[
+
+	{
+  
+	  "name": "John Doe",
+  
+	  "position": "President",
+  
+	  "url": "https://example.com",
+  
+	  "facebook": "https://facebook.com",
+  
+	  "instagram": "https://instagram.com",
+  
+	  "linkedin": "https://linkedin.com",
+  
+	  "team": "Developer"
+  
+	}
+  
+  ]
+  

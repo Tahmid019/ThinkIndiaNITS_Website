@@ -3,26 +3,39 @@
 	import { writable } from 'svelte/store';
 	import TeamCard from '$lib/components/TeamCard.svelte';
 	import teamData from '$lib/data/TeamData.json' assert { type: 'json' };
-	const data = teamData;
-	import BlackBg from '../images/black-bg.jpeg';
-	import LightBg from '../images/images2.jpg';
+	import BlackBg from '$lib/assets/admin.jpg';
+	import LightBg from '$lib/assets/admin.jpg';
+
+	// Define the TeamMember Type
+	type TeamMember = {
+		name: string;
+		position: string;
+		url?: string;
+		facebook?: string;
+		instagram?: string;
+		linkedin?: string;
+		team?: string;
+	};
+
+	const data: TeamMember[] = teamData;
 
 	// Theme mode store
-	const themeMode = writable<'dark' | 'light'>('dark'); // Replace this with your actual theme context or logic
+	const themeMode = writable<'dark' | 'light'>('dark');
 
 	let bgImg = BlackBg;
 	let selectedRole: keyof typeof roleFilters = 'President';
 
-	const roleFilters = {
-		President: (member: any) =>
-			member.position === 'President' || member.position === 'Vice President',
-		Heads: (member: any) => member.position.includes('Head'),
-		Analysts: (member: any) => member.position.includes('Analyst'),
-		Members: (member: any) => member.position.toLowerCase() === 'member'
+	// Define role filters with proper types
+	const roleFilters: Record<string, (member: TeamMember) => boolean> = {
+		President: (member) => member.position === 'President' || member.position === 'Vice President',
+		Heads: (member) => member.position.includes('Head'),
+		Analysts: (member) => member.position.includes('Analyst'),
+		Members: (member) => member.position.toLowerCase() === 'member'
 	};
 
-	let filteredTeamByRole = data.filter(roleFilters[selectedRole]);
-	let memberTeams = {
+	let filteredTeamByRole: TeamMember[] = data.filter(roleFilters[selectedRole]);
+
+	let memberTeams: Record<string, TeamMember[]> = {
 		Developer: [],
 		'Junior Fundamental Analyst': [],
 		'Junior Technical Analyst': [],
@@ -31,9 +44,12 @@
 		Design: []
 	};
 
+	// Update filtered team
 	const updateFilteredTeam = () => {
 		filteredTeamByRole = data.filter(roleFilters[selectedRole]);
+
 		if (selectedRole === 'Members') {
+			// Reset memberTeams
 			memberTeams = {
 				Developer: [],
 				'Junior Fundamental Analyst': [],
@@ -73,13 +89,10 @@
 
 		<!-- Role Selector -->
 		<div class="role-selector mb-10 flex justify-center gap-6">
-			{#each ['President', 'Heads', 'Analysts', 'Members'] as role}
+			{#each Object.keys(roleFilters) as role}
 				<button
 					on:click={() => (selectedRole = role)}
-					class="rounded-full px-6 py-2 font-semibold shadow-md transition-all duration-200 {selectedRole ===
-					role
-						? 'bg-black text-white'
-						: 'bg-gray-200 text-gray-700'}"
+					class="rounded-full px-6 py-2 font-semibold shadow-md transition-all duration-200 {selectedRole === role ? 'bg-black text-white' : 'bg-gray-200 text-gray-700'}"
 				>
 					{role}
 				</button>
@@ -96,13 +109,7 @@
 							<div class="team-grid flex w-full flex-wrap justify-center gap-8">
 								{#each memberTeams[team] as member, index}
 									<TeamCard
-										key={member.name + index}
-										{name}
-										{position}
-										{url}
-										{facebook}
-										{instagram}
-										{linkedin}
+										{...member}
 										themeMode={$themeMode}
 									/>
 								{/each}
@@ -114,15 +121,9 @@
 		{:else}
 			<div class="team-grid mt-8 flex w-full flex-wrap justify-center gap-8">
 				{#if filteredTeamByRole.length > 0}
-					{#each filteredTeamByRole as member, index}
+					{#each filteredTeamByRole as member}
 						<TeamCard
-							key={member.name + index}
-							{name}
-							{position}
-							{url}
-							{facebook}
-							{instagram}
-							{linkedin}
+							{...member}
 							themeMode={$themeMode}
 						/>
 					{/each}

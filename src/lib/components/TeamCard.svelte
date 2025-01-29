@@ -1,13 +1,28 @@
+
 <script lang="ts">
-	export let name: string;
-	export let position: string;
-	export let url: string;
-	// export let facebook?: string;
-	// export let instagram?: string;
-	// export let linkedin?: string;
-	// export let github?: string;
-	export let themeMode: 'dark' | 'light';
+
+ 
+
+export let name: string;
+
+export let position: string;
+
+export let url: string | undefined;
+
+export let facebook: string | undefined;
+
+export let instagram: string | undefined;
+
+export let linkedin: string | undefined;
+
+export let team: string | undefined;
+
+export let themeMode: 'dark' | 'light';
+
+
+
 </script>
+
 
 <div
 	class="profile-card flex transform flex-col items-center rounded-lg bg-white p-6 shadow-lg transition-transform hover:scale-105 dark:bg-gray-800"

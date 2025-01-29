@@ -2,18 +2,19 @@
 	import EventCard from '$lib/components/EventCard.svelte';
 	import EventDetailsPopup from '$lib/components/EventDetailsPopup.svelte';
 
-	let selectedEvent: {
+	type Event = {
 		id: number;
 		title: string;
 		date: string;
 		location: string;
 		description: string;
 		imageUrl: string;
-	} | null = null;
+	};
 
+	let selectedEvent: Event | null = null;
 	let isPopupOpen = false;
 
-	const events = [
+	const events: Event[] = [
 		{
 			id: 1,
 			title: 'Event 1',
@@ -30,10 +31,9 @@
 			description: 'This is a detailed description of Event 2.',
 			imageUrl: 'https://via.placeholder.com/400x200'
 		}
-		// Add more events as needed
 	];
 
-	function handleEventSelect(event: any) {
+	function handleEventSelect(event: Event) {
 		selectedEvent = event;
 		isPopupOpen = true;
 	}
@@ -48,7 +48,7 @@
 	<h1 class="mb-6 text-3xl font-bold">Events</h1>
 	<div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
 		{#each events as event}
-			<EventCard {event} on:select={handleEventSelect} />
+			<EventCard {event} on:select={() => handleEventSelect(event)} />
 		{/each}
 	</div>
 </div>
