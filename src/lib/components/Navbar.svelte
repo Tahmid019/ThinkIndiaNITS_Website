@@ -7,7 +7,7 @@
 	<div class="mx-auto flex max-w-7xl items-center justify-between p-4">
 		<!-- Logo -->
 		<a href="/" class="flex items-center space-x-3">
-			<img src={logo} class="h-8 md:h-12 lg:h-16 xl:h-20" alt="Flowbite Logo" />
+			<img src={logo} class="h-12 lg:h-16 xl:h-20" alt="Finance Club Logo" />
 		</a>
 
 		<!-- Mobile Menu Button -->

@@ -9,7 +9,7 @@
 </script>
 
 <footer
-	class="bg-slate-800/25 px-6 py-8 text-white backdrop-blur-md transition-all duration-300 hover:bg-slate-800/35"
+	class="bg-slate-800/25 px-6 py-0 lg:py-8 text-white backdrop-blur-md transition-all duration-300 hover:bg-slate-800/35"
 >
 	<div class="mx-auto grid max-w-6xl grid-cols-1 gap-6 md:grid-cols-3">
 		<!-- Contact Section -->
