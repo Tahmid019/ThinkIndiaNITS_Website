@@ -62,6 +62,7 @@
 		"@popperjs/core": "^2.11.8",
 		"classnames": "^2.5.1",
 		"clsx": "^2.1.1",
+		"cobe": "^0.6.3",
 		"flowbite": "^3.0.0",
 		"flowbite-svelte": "^0.47.4",
 		"svelte-inview": "^4.0.4",
