@@ -43,7 +43,7 @@
 
 		<!-- Navigation Links -->
 		<div
-			class="fixed left-0 top-0 h-screen w-32 transform bg-white/95 backdrop-blur-xl transition-transform duration-300 ease-in-out md:static md:h-auto md:w-auto md:translate-x-0 md:bg-transparent md:backdrop-blur-none"
+			class="fixed left-0 top-0 h-screen w-32 transform bg-black/50 backdrop-blur-xl transition-transform duration-300 ease-in-out md:static md:h-auto md:w-auto md:translate-x-0 md:bg-transparent md:backdrop-blur-none"
 			class:translate-x-0={isOpen}
 			class:-translate-x-full={!isOpen}
 		>
@@ -52,7 +52,7 @@
 					<li>
 						<a
 							href={link}
-							class="block rounded-md px-4 py-2 text-base font-semibold text-black hover:bg-slate-900/20 lg:text-lg xl:text-xl"
+							class="block rounded-md px-4 py-2 text-base font-semibold text-white hover:bg-slate-900/20 lg:text-lg xl:text-xl"
 							on:click={() => (isOpen = false)}
 						>
 							{name}
