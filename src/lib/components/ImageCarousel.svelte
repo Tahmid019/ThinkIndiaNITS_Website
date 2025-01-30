@@ -36,7 +36,11 @@
 			<Marquee pauseOnHover class="[--duration:50s]">
 				{#each Array(3).fill(images).flat() as item, i (i)}
 					<div class="flex flex-row items-center gap-2">
-						<img class="w-32 md:w-40 lg:w-60 rounded-md grayscale hover:grayscale-0" alt="" src={item} />
+						<img
+							class="w-32 rounded-md grayscale hover:grayscale-0 md:w-40 lg:w-60"
+							alt=""
+							src={item}
+						/>
 					</div>
 				{/each}
 			</Marquee>

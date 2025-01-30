@@ -1,9 +1,8 @@
 <script>
-	import TeamPage from "$lib/components/TeamPage.svelte";
-	import GradientAnimation from "$lib/components/ui/GradientAnimation.svelte";
-
+	import TeamPage from '$lib/components/TeamPage.svelte';
+	import GradientAnimation from '$lib/components/ui/GradientAnimation.svelte';
 </script>
 
 <GradientAnimation>
-<TeamPage />
+	<TeamPage />
 </GradientAnimation>

@@ -7,19 +7,14 @@
 
 	import GradientAnimation from '$lib/components/ui/GradientAnimation.svelte';
 	import Footer from '$lib/components/Footer.svelte';
-
-
-	
 </script>
 
-
 <GradientAnimation>
-<div class="home-container bg-black">
-	<Hero />
-	<About />
-	<Timeline />
-	<ImageCarousel />
-</div>
-<Footer />
+	<div class="home-container bg-black">
+		<Hero />
+		<About />
+		<Timeline />
+		<ImageCarousel />
+	</div>
+	<Footer />
 </GradientAnimation>
-

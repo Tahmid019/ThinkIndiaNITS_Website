@@ -3,9 +3,9 @@
 	import Globe from './ui/Globe.svelte';
 </script>
 
-<section class="bg-transparent pt-20 pb-28 lg:pb-0 text-center">
+<section class="bg-transparent pb-28 pt-20 text-center lg:pb-0">
 	<div class="hero-container flex flex-col items-center px-6 md:px-12 lg:flex-row lg:px-36">
-		<div class="container mx-auto px-4  md:pt-20 lg:pt-32 pb-32 text-center md:px-6 lg:text-right">
+		<div class="container mx-auto px-4 pb-32 text-center md:px-6 md:pt-20 lg:pt-32 lg:text-right">
 			<BlurFade delay={0.25}>
 				<h1
 					class="mb-4 text-4xl font-bold tracking-tighter text-white sm:text-5xl lg:text-6xl xl:text-7xl"
@@ -29,8 +29,8 @@
 		</div>
 		<div class="img w-full max-w-xs sm:max-w-sm md:max-w-md lg:block lg:max-w-lg">
 			<BlurFade delay={0.75}>
-			<!-- <img src="3delem.png" alt="elem-3d" class="h-auto w-full" /> -->
-			 <Globe class="-top-32"/>
+				<!-- <img src="3delem.png" alt="elem-3d" class="h-auto w-full" /> -->
+				<Globe class="-top-32" />
 			</BlurFade>
 		</div>
 	</div>

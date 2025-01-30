@@ -8,7 +8,7 @@ export default {
 	theme: {
 		extend: {
 			animation: {
-				shine: "shine 2s linear infinite",
+				shine: 'shine 2s linear infinite',
 				orbit: 'orbit calc(var(--duration)*1s) linear infinite',
 				aurora: 'aurora 60s linear infinite',
 				marquee: 'marquee var(--duration) linear infinite',
@@ -16,9 +16,9 @@ export default {
 			},
 			keyframes: {
 				shine: {
-					from: { backgroundPosition: "0 0" },
-					to: { backgroundPosition: "-200% 0" },
-				  },
+					from: { backgroundPosition: '0 0' },
+					to: { backgroundPosition: '-200% 0' }
+				},
 				orbit: {
 					'0%': {
 						transform: 'rotate(0deg) translateY(calc(var(--radius) * 1px)) rotate(0deg)'
