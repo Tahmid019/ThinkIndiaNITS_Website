@@ -2,27 +2,25 @@
 	// import sponserData from '$lib/data/sponsers.json';
 	import sponsers from '$lib/data/sponsor.js';
 
-	import Marquee from "$lib/components/ui/Marquee.svelte";
-	import SponsorCard from "$lib/components/SponsorCArd.svelte";
+	import Marquee from '$lib/components/ui/Marquee.svelte';
+	import SponsorCard from '$lib/components/SponsorCArd.svelte';
 	import BlurFade from './ui/BlurFade.svelte';
 
 	let zeroRow = sponsers.slice(0, sponsers.length);
 	// let firstRow = sponserData.sponsers.slice(0, sponserData.sponsers.length / 2);
 	// let secondRow = sponserData.sponsers.slice(sponserData.sponsers.length / 2);
-
-
 </script>
 
-<div id="sponsors" class="sponser-container ">
+<div id="sponsors" class="sponser-container">
 	<div class="sponser_intro pb-8" id="inside_sponsers">
-        <BlurFade>
-		<span
-			class=" w-fit bg-white bg-clip-text text-wrap p-2 text-center font-bold text-transparent text-3xl sm:text-4xl lg:text-5xl xl:text-6xl
+		<BlurFade>
+			<span
+				class=" w-fit text-wrap bg-white bg-clip-text p-2 text-center text-3xl font-bold text-transparent sm:text-4xl lg:text-5xl xl:text-6xl
 "
-		>
-			Past Sponsors
-		</span>
-        </BlurFade>
+			>
+				Past Sponsors
+			</span>
+		</BlurFade>
 	</div>
 	<div class="sponser_cards">
 		<div
