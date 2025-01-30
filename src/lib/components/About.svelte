@@ -1,6 +1,5 @@
 <!-- src/lib/components/About.svelte -->
 <script lang="ts">
-	import admin from '$lib/assets/admin.jpg';
 	import BlurFade from '$lib/components/ui/BlurFade.svelte';
 
 	import { onMount } from 'svelte';
@@ -20,7 +19,7 @@
 	});
 </script>
 
-<section id="about" class="bg-transparent py-20">
+<section id="about" class="bg-transparent py-10">
 	<div class="container mx-auto px-6">
 		<BlurFade delay={0.25}>
 			<h1
@@ -33,7 +32,7 @@
 			<div
 				class="transition-transform duration-1000 {isVisible ? 'translate-x-0' : '-translate-x-20'}"
 			>
-				<img src={admin} alt="About Us" class="rounded-lg shadow-lg" />
+				<img src="admin.jpg" alt="About Us" class="rounded-lg shadow-lg" />
 			</div>
 			<div
 				class="transition-transform delay-200 duration-1000 {isVisible

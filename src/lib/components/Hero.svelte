@@ -1,9 +1,8 @@
 <script lang="ts">
 	import BlurFade from '$lib/components/ui/BlurFade.svelte';
-	import elem from '$lib/assets/3delem.png';
 </script>
 
-<section class="bg-transparent py-20 text-center">
+<section class="bg-transparent pt-20 pb-10 text-center">
 	<div class="hero-container flex flex-col items-center px-6 md:px-12 lg:flex-row lg:px-36">
 		<div class="container mx-auto px-4 pt-10 text-center md:px-6 lg:text-right">
 			<BlurFade delay={0.25}>
@@ -28,7 +27,9 @@
 			</BlurFade>
 		</div>
 		<div class="img hidden w-full max-w-xs sm:max-w-sm md:max-w-md lg:block lg:max-w-lg">
-			<img src={elem} alt="elem-3d" class="h-auto w-full" />
+			<BlurFade delay={0.75}>
+			<img src="3delem.png" alt="elem-3d" class="h-auto w-full" />
+			</BlurFade>
 		</div>
 	</div>
 </section>
