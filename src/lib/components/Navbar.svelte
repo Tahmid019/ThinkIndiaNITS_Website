@@ -52,7 +52,7 @@
 					<li>
 						<a
 							href={link}
-							class="block rounded-md px-4 py-2 text-base font-semibold text-white hover:bg-white/20 lg:text-lg xl:text-xl"
+							class="block rounded-md px-4 py-2 text-base font-semibold text-black hover:bg-slate-900/20 lg:text-lg xl:text-xl"
 							on:click={() => (isOpen = false)}
 						>
 							{name}
