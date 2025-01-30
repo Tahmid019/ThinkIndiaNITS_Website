@@ -53,7 +53,7 @@
     });
 </script>
   <div
-    class="team-page flex items-center justify-center p-6 pt-24 min-h-screen bg-cover bg-center bg-transparent"
+    class="team-page flex items-center justify-center p-6 pt-24 lg:pt-32 min-h-screen bg-cover bg-center bg-transparent"
   >
     <div class="flex flex-col items-center w-[90vw] max-w-screen-lg">
       <!-- Team Header -->

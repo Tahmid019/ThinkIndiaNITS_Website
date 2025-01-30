@@ -15,7 +15,7 @@
 	<div class="sponser_intro pb-8" id="inside_sponsers">
 		<BlurFade>
 			<span
-				class=" w-fit text-wrap bg-white bg-clip-text p-2 text-center text-3xl font-bold text-transparent sm:text-4xl lg:text-5xl xl:text-6xl
+				class=" w-fit text-wrap bg-white bg-clip-text p-2 text-center text-3xl font-extrabold text-transparent sm:text-4xl lg:text-5xl xl:text-6xl
 "
 			>
 				Past Sponsors

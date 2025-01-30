@@ -1,4 +1,4 @@
-import avin from '$lib/assets/Anviz-logo.webp';
+import avin from '$lib/assets/anviz.webp';
 import unstop from '$lib/assets/unstop.webp';
 import stockgrow from '$lib/assets/stockgrow.webp';
 import pkser from '$lib/assets/PK-service-logo.webp';

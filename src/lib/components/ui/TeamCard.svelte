@@ -92,8 +92,7 @@
                 <img
                   src={url}
                   alt={`${name}'s profile`}
-                  class="w-full h-full object-cover scale-[1.15]"
-                  loading="lazy"
+                  class="w-full h-full object-cover scale-[1.15] "
                 />
               </div>
             </Motion>
@@ -160,6 +159,7 @@
 <style>
   .profile-card {
     max-width: 200px;
+    
     margin: 0 auto;
   }
 </style>
