@@ -57,22 +57,22 @@ export const data = [
 	},
 
 	// Mentors
-	{
-		name: 'John Doe',
-		imageUrl: 'https://i.imghippo.com/files/heXs91728924022.jpg',
-		position: 'Mentor',
-		facebook: 'https://www.facebook.com/john.doe',
-		instagram: 'https://www.instagram.com/john.doe',
-		linkedin: 'https://www.linkedin.com/in/john-doe'
-	},
-	{
-		name: 'Jane Smith',
-		imageUrl: 'https://i.imghippo.com/files/heXs91728924022.jpg',
-		position: 'Mentor',
-		facebook: 'https://www.facebook.com/jane.smith',
-		instagram: 'https://www.instagram.com/jane.smith',
-		linkedin: 'https://www.linkedin.com/in/jane-smith'
-	},
+	// {
+	// 	name: 'John Doe',
+	// 	imageUrl: 'https://i.imghippo.com/files/heXs91728924022.jpg',
+	// 	position: 'Mentor',
+	// 	facebook: 'https://www.facebook.com/john.doe',
+	// 	instagram: 'https://www.instagram.com/john.doe',
+	// 	linkedin: 'https://www.linkedin.com/in/john-doe'
+	// },
+	// {
+	// 	name: 'Jane Smith',
+	// 	imageUrl: 'https://i.imghippo.com/files/heXs91728924022.jpg',
+	// 	position: 'Mentor',
+	// 	facebook: 'https://www.facebook.com/jane.smith',
+	// 	instagram: 'https://www.instagram.com/jane.smith',
+	// 	linkedin: 'https://www.linkedin.com/in/jane-smith'
+	// },
 
 	// Members
 	// PR & Marketing

@@ -23,6 +23,10 @@
 	let tgX = 0;
 	let tgY = 0;
 
+	// Particle system
+	let particles: { x: number; y: number; size: number; color: string }[] = [];
+	const particleCount = 100;
+
 	$: {
 		if (tgX || tgY) updateGradient();
 	}
@@ -38,6 +42,19 @@
 		document.body.style.setProperty('--pointer-color', pointerColor);
 		document.body.style.setProperty('--size', size);
 		document.body.style.setProperty('--blending-value', blendingValue);
+
+		// Initialize particles
+		for (let i = 0; i < particleCount; i++) {
+			particles.push({
+				x: Math.random() * window.innerWidth,
+				y: Math.random() * window.innerHeight,
+				size: Math.random() * 5 + 1,
+				color: `rgba(${pointerColor}, ${Math.random() * 0.5 + 0.2})`
+			});
+		}
+
+		// Start animation loop
+		requestAnimationFrame(animateParticles);
 	});
 
 	function updateGradient() {
@@ -56,6 +73,23 @@
 			tgY = event.clientY - rect.top;
 		}
 	};
+
+	// Particle animation
+	function animateParticles() {
+		particles.forEach((particle) => {
+			// Move particles towards the mouse
+			particle.x += (tgX - particle.x) * 0.05;
+			particle.y += (tgY - particle.y) * 0.05;
+
+			// Reset particles if they go off screen
+			if (particle.x > window.innerWidth || particle.x < 0 || particle.y > window.innerHeight || particle.y < 0) {
+				particle.x = Math.random() * window.innerWidth;
+				particle.y = Math.random() * window.innerHeight;
+			}
+		});
+
+		requestAnimationFrame(animateParticles);
+	}
 </script>
 
 <div
@@ -141,5 +175,19 @@
 				)}
 			></div>
 		{/if}
+
+		<!-- Particle System -->
+		{#each particles as particle}
+			<div
+				class="particle"
+				style="position: absolute; top: {particle.y}px; left: {particle.x}px; width: {particle.size}px; height: {particle.size}px; background: {particle.color}; border-radius: 50%;"
+			></div>
+		{/each}
 	</div>
 </div>
+
+<style>
+	.particle {
+		will-change: transform;
+	}
+</style>
