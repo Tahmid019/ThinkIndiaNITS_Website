@@ -59,13 +59,16 @@
 			observer.observe(el);
 		});
 	});
+
+	export let gradVar:string = "font-bold animate-text-gradient bg-gradient-to-r from-[#ACACAC] via-[#363636] to-[#ACACAC] bg-[200%_auto] text-3xl text-center text-transparent bg-clip-text";
+
 </script>
 
 <section class="relative bg-transparent py-20">
 	<div class="container mx-auto px-6">
 		<BlurFade delay={0.15}>
 			<h2
-				class="mb-10 text-center text-3xl font-bold tracking-tighter text-white sm:text-4xl lg:text-5xl"
+				class="mb-10 text-center text-3xl font-bold tracking-tighter {gradVar} sm:text-4xl lg:text-5xl"
 			>
 				Our Timeline
 			</h2>
