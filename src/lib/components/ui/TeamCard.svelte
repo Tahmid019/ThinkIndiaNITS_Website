@@ -99,7 +99,6 @@
 									src={url}
 									alt={`${name}'s profile`}
 									class="h-full w-full scale-[1.15] object-cover"
-									loading="lazy"
 								/>
 							</div>
 						</Motion>
