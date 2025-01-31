@@ -1,7 +1,4 @@
-<!-- src/lib/components/ImageCarousel.svelte -->
 <script lang="ts">
-	import { onMount } from 'svelte';
-
 	import fare1 from '$lib/assets/fare1.jpg';
 	import fare2 from '$lib/assets/fare2.jpg';
 	import fare3 from '$lib/assets/fare3.jpg';
@@ -10,33 +7,31 @@
 
 	export let images = [fare1, fare2, fare3];
 
-	export let gradVar:string = "font-bold animate-text-gradient bg-gradient-to-r from-[#ACACAC] via-[#363636] to-[#ACACAC] bg-[200%_auto] text-3xl text-center text-transparent bg-clip-text";
-
+	export let gradVar: string =
+		'font-bold animate-text-gradient bg-gradient-to-r from-[#ACACAC] via-[#363636] to-[#ACACAC] bg-[200%_auto] text-3xl text-center text-transparent bg-clip-text';
 </script>
 
 <section class="bg-transparent py-20">
 	<div class="container mx-auto px-6">
 		<BlurFade delay={0.25}>
-			<h2
-				class="mb-12 text-center text-3xl {gradVar}  sm:text-4xl lg:text-5xl xl:text-6xl"
-			>
+			<h2 class="mb-12 text-center text-3xl {gradVar}  sm:text-4xl lg:text-5xl xl:text-6xl">
 				Flaskbacks
 			</h2>
 		</BlurFade>
 		<div class="w-full">
-			<div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+			<div class="grid gap-4 sm:grid-cols-2 md:grid-cols-4">
 				{#each images as item, i}
 					<div
 						class={cn(
-							'rounded-lg overflow-hidden',
-							i === 0 && 'md:col-span-2 md:row-span-2', 
+							'overflow-hidden rounded-lg',
+							i === 0 && 'md:col-span-2 md:row-span-2',
 							i === 1 && 'md:col-span-2',
-							i === 2 && 'md:col-start-3 md:row-start-1' 
+							i === 2 && 'md:col-start-3 md:row-start-1'
 						)}
 					>
 						<img
 							class={cn(
-								'w-full h-full opacity-50 hover:opacity-100 hover:scale-[1.1] object-cover rounded-lg grayscale hover:grayscale-0 transition-all duration-300',
+								'h-full w-full rounded-lg object-cover opacity-50 grayscale transition-all duration-300 hover:scale-[1.1] hover:opacity-100 hover:grayscale-0',
 								i === 0 && 'h-72 md:h-full', // Adjust height for the first image
 								i === 1 && 'h-36 md:h-72', // Adjust height for the second image
 								i === 2 && 'h-36 md:h-72' // Adjust height for the third image

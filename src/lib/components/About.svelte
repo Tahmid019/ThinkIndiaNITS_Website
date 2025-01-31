@@ -7,15 +7,18 @@
 
 	import TextGenerate from './ui/TextGenerate.svelte';
 
-  export let delay: number = 0.2;
-  export let duration: number = 0.9;
-  export let FinanceClubDescription: string = "The Finance and Investment Club at NIT Silchar is a student-driven organization dedicated to enhancing financial literacy and investment knowledge among its members. The club achieves this by conducting workshops, seminars, and interactive events that cover various aspects of finance and investment strategies.";
-	export let FinanceClubDescription2: string = "Through these initiatives, the Finance and Investment Club at NIT Silchar strives to equip students with practical financial skills and insights, preparing them for successful careers in the financial sector. Sources";
-	export let FinanceClubDescription2_color:string = "text-gray-400";
-	export let FinanceClubDescription2_sizing:string = "text-base  sm:text-lg lg:text-xl xl:text-xl";
+	export let delay: number = 0.2;
+	export let duration: number = 0.9;
+	export let FinanceClubDescription: string =
+		'The Finance and Investment Club at NIT Silchar is a student-driven organization dedicated to enhancing financial literacy and investment knowledge among its members. The club achieves this by conducting workshops, seminars, and interactive events that cover various aspects of finance and investment strategies.';
+	export let FinanceClubDescription2: string =
+		'Through these initiatives, the Finance and Investment Club at NIT Silchar strives to equip students with practical financial skills and insights, preparing them for successful careers in the financial sector. Sources';
+	export let FinanceClubDescription2_color: string = 'text-gray-400';
+	export let FinanceClubDescription2_sizing: string = 'text-base  sm:text-lg lg:text-xl xl:text-xl';
 
 	// export let shineVar:string  = "animate-shine bg-[linear-gradient(110deg,#939393,45%,#1e2631,55%,#939393)] bg-[length:200%_100%] text-transparent bg-clip-text";
-	export let gradVar:string = "font-bold animate-text-gradient bg-gradient-to-r from-[#ACACAC] via-[#363636] to-[#ACACAC] bg-[200%_auto] text-3xl text-center text-transparent bg-clip-text";
+	export let gradVar: string =
+		'font-bold animate-text-gradient bg-gradient-to-r from-[#ACACAC] via-[#363636] to-[#ACACAC] bg-[200%_auto] text-3xl text-center text-transparent bg-clip-text';
 
 	const handleScroll = () => {
 		const aboutSection = document.getElementById('about');
@@ -52,16 +55,18 @@
 					: 'translate-x-20'}"
 			>
 				<BlurFade delay={0.05}>
-					<TextGenerate delay={delay} duration={duration} text={FinanceClubDescription}/>
-					</BlurFade
-				>
+					<TextGenerate {delay} {duration} text={FinanceClubDescription} />
+				</BlurFade>
 				<BlurFade delay={0.05}>
-					<p class="">
-						
-					</p>
-					<TextGenerate delay={delay} duration={duration} text={FinanceClubDescription2} color={FinanceClubDescription2_color} sizing={FinanceClubDescription2_sizing} />
-					</BlurFade
-				>
+					<p class=""></p>
+					<TextGenerate
+						{delay}
+						{duration}
+						text={FinanceClubDescription2}
+						color={FinanceClubDescription2_color}
+						sizing={FinanceClubDescription2_sizing}
+					/>
+				</BlurFade>
 			</div>
 		</div>
 	</div>

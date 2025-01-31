@@ -7,9 +7,6 @@
 
 	import GradientAnimation from '$lib/components/ui/GradientAnimation.svelte';
 	import Footer from '$lib/components/Footer.svelte';
-
-
-	
 </script>
 
 <GradientAnimation>

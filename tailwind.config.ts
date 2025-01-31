@@ -8,7 +8,7 @@ export default {
 	theme: {
 		extend: {
 			animation: {
-				"text-gradient": "text-gradient 1.5s linear infinite",
+				'text-gradient': 'text-gradient 1.5s linear infinite',
 				shine: 'shine 2s linear infinite',
 				orbit: 'orbit calc(var(--duration)*1s) linear infinite',
 				aurora: 'aurora 60s linear infinite',
@@ -16,11 +16,11 @@ export default {
 				'marquee-vertical': 'marquee-vertical var(--duration) linear infinite'
 			},
 			keyframes: {
-				"text-gradient": {
-          to: {
-            backgroundPosition: "200% center",
-          },
-        },
+				'text-gradient': {
+					to: {
+						backgroundPosition: '200% center'
+					}
+				},
 
 				shine: {
 					from: { backgroundPosition: '0 0' },

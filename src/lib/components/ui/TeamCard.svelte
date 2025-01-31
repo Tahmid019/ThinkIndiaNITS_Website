@@ -91,7 +91,7 @@
 				<Motion initial="initial" whileHover={$direction} exit="exit" let:motion>
 					<div class="relative h-full w-full" use:motion>
 						<div
-							class="absolute inset-0 z-10 hidden h-full w-full bg-black/40 transition duration-700 group-hover/card:block"
+							class="absolute {item} inset-0 z-10 hidden h-full w-full bg-black/40 transition duration-700 group-hover/card:block"
 						></div>
 						<Motion transition={{ duration: 0.2, ease: 'easeOut' }} {variants} let:motion>
 							<div use:motion class="relative h-full w-full">
