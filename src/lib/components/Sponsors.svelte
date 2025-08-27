@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	// import sponserData from '$lib/data/sponsers.json';
 	import sponsers from '$lib/data/sponsor.js';
 
@@ -7,6 +7,8 @@
 	import BlurFade from './ui/BlurFade.svelte';
 
 	let zeroRow = sponsers.slice(0, sponsers.length);
+	export let gradVar: string =
+		'font-bold animate-text-gradient bg-gradient-to-r from-[#ACACAC] via-[#363636] to-[#ACACAC] bg-[200%_auto] text-center text-transparent bg-clip-text';
 	// let firstRow = sponserData.sponsers.slice(0, sponserData.sponsers.length / 2);
 	// let secondRow = sponserData.sponsers.slice(sponserData.sponsers.length / 2);
 </script>
@@ -15,7 +17,7 @@
 	<div class="sponser_intro pb-8" id="inside_sponsers">
 		<BlurFade>
 			<span
-				class=" w-fit text-wrap bg-white bg-clip-text p-2 text-center text-3xl font-extrabold text-transparent sm:text-4xl lg:text-5xl xl:text-6xl
+				class=" w-fit  text-center text-h1 font-extrabold text-transparent {gradVar}
 "
 			>
 				Past Sponsors
@@ -24,9 +26,14 @@
 	</div>
 	<div class="sponser_cards">
 		<div
-			class="bg-background relative flex w-full flex-col items-center justify-center overflow-hidden rounded-lg py-1 md:shadow-xl"
+			class="bg-background relative flex w-100px flex-col items-center justify-center overflow-hidden rounded-lg py-1 md:shadow-xl"
 		>
 			<Marquee pauseOnHover class="[--duration:30s]">
+				{#each zeroRow as item}
+					<SponsorCard {...item} />
+				{/each}
+			</Marquee>
+			<Marquee pauseOnHover class="[--duration:30s]" reverse={"true"}>
 				{#each zeroRow as item}
 					<SponsorCard {...item} />
 				{/each}
