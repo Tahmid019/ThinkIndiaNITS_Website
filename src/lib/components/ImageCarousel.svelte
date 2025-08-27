@@ -8,13 +8,13 @@
 	export let images = [fare1, fare2, fare3];
 
 	export let gradVar: string =
-		'font-bold animate-text-gradient bg-gradient-to-r from-[#ACACAC] via-[#363636] to-[#ACACAC] bg-[200%_auto] text-3xl text-center text-transparent bg-clip-text';
+		'font-bold animate-text-gradient bg-gradient-to-r from-[#ACACAC] via-[#363636] to-[#ACACAC] bg-[200%_auto] text-center text-transparent bg-clip-text';
 </script>
 
 <section class="bg-transparent py-20">
 	<div class="container mx-auto px-6">
 		<BlurFade delay={0.25}>
-			<h2 class="mb-12 text-center text-3xl {gradVar}  sm:text-4xl lg:text-5xl xl:text-6xl">
+			<h2 class="mb-12 text-center text-h1 {gradVar}">
 				Flaskbacks
 			</h2>
 		</BlurFade>

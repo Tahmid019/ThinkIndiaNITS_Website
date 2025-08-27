@@ -68,7 +68,7 @@
 	<div class="container mx-auto px-6">
 		<BlurFade delay={0.15}>
 			<h2
-				class="mb-10 text-center text-3xl font-bold tracking-tighter {gradVar} sm:text-4xl lg:text-5xl"
+				class="mb-10 text-center text-h1 font-bold tracking-tighter {gradVar} "
 			>
 				Our Timeline
 			</h2>
@@ -89,14 +89,14 @@
 						<!-- Alternate Sides on Large Screens -->
 						<div class="w-full px-4 md:w-1/2 {index % 2 === 0 ? 'md:order-1' : ''}">
 							<div
-								class="group rounded-lg border border-slate-800 bg-slate-900/35 p-6 shadow-lg backdrop-blur-md transition-all duration-300 hover:scale-105 hover:bg-white hover:shadow-xl"
+								class="group rounded-lg border border-slate-800 bg-slate-900/35 p-6 shadow-lg backdrop-blur-md transition-all duration-300 hover:scale-[1.01] hover:bg-white hover:shadow-xl"
 							>
 								<h3
-									class="mb-2 text-2xl font-bold text-white transition-all duration-300 group-hover:text-gray-900"
+									class="mb-2 text-h5 font-bold text-white transition-all duration-300 group-hover:text-gray-900"
 								>
 									{item.title}
 								</h3>
-								<p class="text-gray-300 transition-all duration-300 group-hover:text-gray-700">
+								<p class="text-small text-gray-300 transition-all duration-300 group-hover:text-gray-700">
 									{item.description}
 								</p>
 							</div>
