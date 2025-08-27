@@ -6,7 +6,7 @@
 	export let text: string =
 		'The Finance and Investment Club at NIT Silchar is a student-driven organization dedicated to enhancing financial literacy and investment knowledge among its members. The club achieves this by conducting workshops, seminars, and interactive events that cover various aspects of finance and investment strategies.';
 	export let color: string = 'text-white';
-	export let sizing: string = 'text-base sm:text-lg lg:text-xl xl:text-xl';
+	export let sizing: string = 'text-small';
 </script>
 
 <p class="mb-4 {color} {sizing}">

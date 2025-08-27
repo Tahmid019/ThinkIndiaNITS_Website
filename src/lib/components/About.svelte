@@ -14,11 +14,11 @@
 	export let FinanceClubDescription2: string =
 		'Through these initiatives, the Finance and Investment Club at NIT Silchar strives to equip students with practical financial skills and insights, preparing them for successful careers in the financial sector. Sources';
 	export let FinanceClubDescription2_color: string = 'text-gray-400';
-	export let FinanceClubDescription2_sizing: string = 'text-base  sm:text-lg lg:text-xl xl:text-xl';
+	export let FinanceClubDescription2_sizing: string = 'text-small';
 
 	// export let shineVar:string  = "animate-shine bg-[linear-gradient(110deg,#939393,45%,#1e2631,55%,#939393)] bg-[length:200%_100%] text-transparent bg-clip-text";
 	export let gradVar: string =
-		'font-bold animate-text-gradient bg-gradient-to-r from-[#ACACAC] via-[#363636] to-[#ACACAC] bg-[200%_auto] text-3xl text-center text-transparent bg-clip-text';
+		'font-bold animate-text-gradient bg-gradient-to-r from-[#ACACAC] via-[#363636] to-[#ACACAC] bg-[200%_auto] text-center text-transparent bg-clip-text';
 
 	const handleScroll = () => {
 		const aboutSection = document.getElementById('about');
@@ -35,10 +35,10 @@
 </script>
 
 <section id="about" class="bg-transparent py-10">
-	<div class="container mx-auto px-6">
+	<div class="container mx-auto px-6 text-justify">
 		<BlurFade delay={0.25}>
 			<h1
-				class="mb-10 text-center text-3xl tracking-tighter {gradVar} sm:text-4xl lg:text-5xl xl:text-6xl"
+				class="mb-10 text-center text-h1 tracking-tighter {gradVar} "
 			>
 				About Us
 			</h1>
