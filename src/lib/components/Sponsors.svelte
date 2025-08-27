@@ -33,7 +33,7 @@
 					<SponsorCard {...item} />
 				{/each}
 			</Marquee>
-			<Marquee pauseOnHover class="[--duration:30s]" reverse={"true"}>
+			<Marquee pauseOnHover class="[--duration:30s]" reverse={true}>
 				{#each zeroRow as item}
 					<SponsorCard {...item} />
 				{/each}

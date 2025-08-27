@@ -57,6 +57,19 @@ export default {
 				{ lineHeight: '1.4', fontWeight: '400' }
 				],
 			},
+			height: {
+				logo: "clamp(1.25rem, 4vw, 5rem)" 
+			},
+			padding: {
+				section: "clamp(1rem, 5vw, 4rem)",   // dynamic vertical/horizontal padding
+				card: "clamp(0.5rem, 2vw, 2rem)"     // fluid card padding
+			},
+				margin: {
+				section: "clamp(1rem, 5vw, 6rem)"
+			},
+				gap: {
+				fluid: "clamp(0.5rem, 3vw, 3rem)"
+			},
 			animation: {
 				'text-gradient': 'text-gradient 1.5s linear infinite',
 				shine: 'shine 2s linear infinite',

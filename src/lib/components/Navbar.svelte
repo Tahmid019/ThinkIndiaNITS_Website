@@ -4,10 +4,10 @@
 </script>
 
 <nav class="fixed left-0 top-0 z-[1000] w-full bg-white/10 shadow-md backdrop-blur-md">
-	<div class="mx-auto flex max-w-7xl items-center justify-between p-4">
+	<div class="mx-auto flex max-w-7xl items-center justify-between">
 		<!-- Logo -->
 		<a href="/" class="flex items-center space-x-3">
-			<img src={logo} class="h-12 lg:h-16 xl:h-20" alt="Finance Club Logo" />
+			<img src={logo} class="h-logo pl-card" alt="Think India Logo" />
 		</a>
 
 		<!-- Mobile Menu Button -->
@@ -52,7 +52,7 @@
 					<li>
 						<a
 							href={link}
-							class="block rounded-md px-4 py-2 text-base font-semibold text-white hover:bg-slate-900/20 lg:text-lg xl:text-xl"
+							class="block rounded-md px-4 py-2 text-h6 font-semibold text-slate-200 hover:bg-slate-900/20 "
 							on:click={() => (isOpen = false)}
 						>
 							{name}
