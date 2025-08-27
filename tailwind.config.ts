@@ -7,6 +7,56 @@ export default {
 
 	theme: {
 		extend: {
+			fontFamily: {
+				heading: ['Montserrat', 'sans-serif'],
+				body: ['Roboto', 'sans-serif'],
+			},
+			fontSize: {
+				display: [
+				'clamp(3rem, 6vw, 5rem)', // 48px → 80px
+				{ lineHeight: '1.1', fontWeight: '700' }
+				],
+
+				// Headings
+				h1: [
+				'clamp(2.25rem, 5vw, 3rem)', // 36px → 48px
+				{ lineHeight: '1.2', fontWeight: '700' }
+				],
+				h2: [
+				'clamp(1.75rem, 4vw, 2.5rem)', // 28px → 40px
+				{ lineHeight: '1.3', fontWeight: '700' }
+				],
+				h3: [
+				'clamp(1.5rem, 3vw, 2rem)', // 24px → 32px
+				{ lineHeight: '1.3', fontWeight: '600' }
+				],
+				h4: [
+				'clamp(1.25rem, 2.5vw, 1.5rem)', // 20px → 24px
+				{ lineHeight: '1.4', fontWeight: '600' }
+				],
+				h5: [
+				'clamp(1.125rem, 2vw, 1.25rem)', // 18px → 20px
+				{ lineHeight: '1.4', fontWeight: '600' }
+				],
+				h6: [
+				'clamp(1rem, 1.5vw, 1.125rem)', // 16px → 18px
+				{ lineHeight: '1.5', fontWeight: '600' }
+				],
+
+				// Body text
+				body: [
+				'clamp(1rem, 1.5vw, 1.125rem)', // 16px → 18px
+				{ lineHeight: '1.6', fontWeight: '400' }
+				],
+				small: [
+				'clamp(0.875rem, 1vw, 1rem)', // 14px → 16px
+				{ lineHeight: '1.5', fontWeight: '400' }
+				],
+				tiny: [
+				'clamp(0.75rem, 0.8vw, 0.875rem)', // 12px → 14px
+				{ lineHeight: '1.4', fontWeight: '400' }
+				],
+			},
 			animation: {
 				'text-gradient': 'text-gradient 1.5s linear infinite',
 				shine: 'shine 2s linear infinite',

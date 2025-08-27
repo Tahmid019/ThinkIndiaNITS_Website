@@ -9,26 +9,26 @@
 		<div class="container mx-auto px-4 pb-32 text-center md:px-6 md:pt-20 lg:pt-32 lg:text-right">
 			<BlurFade delay={0.25}>
 				<h1
-					class="mb-10 mt-10 flex justify-center text-4xl font-bold tracking-tighter sm:text-5xl lg:justify-end lg:text-6xl xl:text-7xl"
+					class="mb-5 mt-10 flex justify-center lg:justify-end text-display font-bold tracking-tighter "
 				>
 					<div class="group relative overflow-hidden">
-						<span class="invisible">Finance & Investment Club</span>
+						<span class="invisible">Think India</span>
 						<span
 							class="absolute left-0 top-0 animate-text-gradient transition-transform duration-500 ease-in-out hover:duration-300 group-hover:-translate-y-full"
 						>
-							Finance & Investment Club
+							Think India
 						</span>
 						<span
 							class="absolute left-0 top-0 translate-y-full animate-text-gradient transition-transform duration-500 ease-in-out hover:duration-300 group-hover:translate-y-0"
 						>
-							Finance & Investment Club
+							Think India
 						</span>
 					</div>
 				</h1>
 			</BlurFade>
 
 			<BlurFade delay={0.5}>
-				<p class="mb-8 text-lg tracking-tighter text-white sm:text-xl xl:text-3xl">NIT Silchar</p>
+				<p class="mb-8 text-h3 tracking-tighter text-white ">NIT Silchar</p>
 			</BlurFade>
 
 			<BlurFade delay={0.75}>
