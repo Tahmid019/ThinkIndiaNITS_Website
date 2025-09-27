@@ -10,11 +10,11 @@
 </script>
 
 <GradientAnimation>
-	<div class="home-container bg-black">
+	<div class="home-container bg-brand-white">
 		<Hero />
 		<About />
 		<Timeline />
 		<ImageCarousel />
 	</div>
 	<Footer />
-</GradientAnimation>
+</GradientAnimation >

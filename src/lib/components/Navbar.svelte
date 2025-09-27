@@ -1,13 +1,13 @@
 <script>
-	import logo from '$lib/assets/logo.svg';
+	import Think_india_logo from '$lib/assets/think_india.svg';
 	let isOpen = false;
 </script>
 
-<nav class="fixed left-0 top-0 z-[1000] w-full bg-white/10 shadow-md backdrop-blur-md">
+<nav class="fixed p-2 left-0 top-0 z-[1000] w-full bg-white/10 shadow-md backdrop-blur-md">
 	<div class="mx-auto flex max-w-7xl items-center justify-between">
 		<!-- Logo -->
 		<a href="/" class="flex items-center space-x-3">
-			<img src={logo} class="h-logo pl-card" alt="Think India Logo" />
+			<img src={Think_india_logo} class="h-logo pl-card" alt="Think India Logo" />
 		</a>
 
 		<!-- Mobile Menu Button -->

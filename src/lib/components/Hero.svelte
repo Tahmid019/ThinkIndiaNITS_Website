@@ -1,6 +1,8 @@
 <script lang="ts">
 	import BlurFade from '$lib/components/ui/BlurFade.svelte';
 	import Globe from './ui/Globe.svelte';
+	import Think_india from '../assets/think_india.svg';
+
 	// import InteractiveHover from './ui/InteractiveHover.svelte';
 </script>
 
@@ -28,13 +30,13 @@
 			</BlurFade>
 
 			<BlurFade delay={0.5}>
-				<p class="mb-8 text-h3 tracking-tighter text-white ">NIT Silchar</p>
+				<p class="mb-8 text-h3 tracking-tighter text-black ">NIT Silchar</p>
 			</BlurFade>
 
 			<BlurFade delay={0.75}>
 				<a
 					href="/About"
-					class="rounded-full border px-6 py-3 font-semibold text-white backdrop-blur-sm transition-colors hover:bg-gray-100 hover:text-black sm:px-8"
+					class="rounded-full border px-6 py-3 font-semibold text-black backdrop-blur-sm transition-colors hover:bg-gray-100 hover:text-black sm:px-8"
 				>
 					Learn More
 				</a>
@@ -43,7 +45,8 @@
 		<div class="img w-full max-w-xs sm:max-w-sm md:max-w-md lg:block lg:max-w-lg">
 			<BlurFade delay={0.75}>
 				<!-- <img src="3delem.png" alt="elem-3d" class="h-auto w-full" /> -->
-				<Globe class="-top-32" />
+				 <img src={Think_india} alt="elem-3d" class="h-auto w-auto inline-flex justify-center"/>
+				<!-- <Globe class="-top-32" /> -->
 			</BlurFade>
 		</div>
 	</div>

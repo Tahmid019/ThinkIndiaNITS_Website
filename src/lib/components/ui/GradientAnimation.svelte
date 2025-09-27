@@ -2,14 +2,24 @@
 	import { cn } from '$lib/utils.js';
 	import { onMount } from 'svelte';
 
+	let orange: string = "255, 159, 28";
+
+	let lightPeach: string = "255, 191, 105";
+
+	let white: string = "255, 255, 255";
+
+	let lightAqua: string = "203, 243, 240";
+
+	let deepTurquoise: string = "46, 196, 182";
+
 	export let gradientBackgroundStart: string | null = 'rgb(0, 0, 0)';
 	export let gradientBackgroundEnd: string | null = 'rgb(0,0,0)';
-	export let firstColor: string | null = '18, 113, 255';
-	export let secondColor: string | null = '221, 74, 255';
-	export let thirdColor: string | null = '0, 0, 0';
-	export let fourthColor: string | null = '200, 50, 50';
-	export let fifthColor: string | null = '200, 100, 50';
-	export let pointerColor: string | null = '76, 103, 235';
+	export let firstColor: string | null = orange;
+	export let secondColor: string | null = orange;
+	export let thirdColor: string | null = orange;
+	export let fourthColor: string | null = lightAqua;
+	export let fifthColor: string | null = deepTurquoise;
+	export let pointerColor: string | null = orange;
 	export let size: string | null = '80%';
 	export let blendingValue: string | null = 'hard-light';
 	export let className: string | undefined = undefined;

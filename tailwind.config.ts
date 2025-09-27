@@ -57,6 +57,16 @@ export default {
 				{ lineHeight: '1.4', fontWeight: '400' }
 				],
 			},
+			colors: {
+				brand: {
+					orange: "#FF9F1C",
+					lightOrange: "#FFBF69",
+					white: "#FFFFFF",
+					lightGreen: "#CBF3F0",
+					green: "#2EC4B6",
+					black: "#000000",
+				},
+			},
 			height: {
 				logo: "clamp(1.25rem, 4vw, 5rem)" 
 			},
