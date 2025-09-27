@@ -3,13 +3,13 @@
 </script>
 
 {#if isLoading}
-	<div class="fixed inset-0 z-50 flex items-center justify-center bg-black">
+	<div class="fixed inset-0 z-50 flex items-center justify-center bg-white">
 		<div class="loading">
 			{#each Array(4) as j, rowIndex}
 				<div class="row {j} flex justify-center">
 					{#each Array(4) as i, pointIndex}
 						<div
-							class="point {i} animate-color h-3 w-3 rounded-full bg-white"
+							class="point {i} animate-color h-3 w-3 rounded-full bg-brand-orange"
 							style={`animation-delay: ${(rowIndex * 4 + pointIndex) * 100}ms;`}
 						></div>
 					{/each}
@@ -38,7 +38,7 @@
 			filter: blur(1px);
 		}
 		50% {
-			background-color: #000000; /* Black */
+			background-color: #ff9f1c; 
 			filter: blur(2px);
 		}
 	}
