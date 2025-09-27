@@ -9,7 +9,7 @@
 				<div class="row {j} flex justify-center">
 					{#each Array(4) as i, pointIndex}
 						<div
-							class="point {i} animate-color h-3 w-3 rounded-full bg-brand-orange"
+							class="point {i} animate-color h-3 w-3 rounded-full bg-white"
 							style={`animation-delay: ${(rowIndex * 4 + pointIndex) * 100}ms;`}
 						></div>
 					{/each}

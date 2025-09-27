@@ -9,7 +9,7 @@
 
 <!-- Main About Page -->
 <GradientAnimation>
-	<div class="bg-trasnparent min-h-screen py-20">
+	<div class="bg-white min-h-screen py-20">
 		<div class="container mx-auto px-4">
 			<!-- Page Header -->
 			<AbtCard />
@@ -18,7 +18,7 @@
 			<Mission />
 
 			<!-- Team Section -->
-			<Sponsors />
+			<!-- <Sponsors /> -->
 
 			<!-- Call to Action -->
 			<!-- <AbtEnd /> -->
