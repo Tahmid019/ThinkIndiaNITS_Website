@@ -14,10 +14,10 @@
 
 	export let gradientBackgroundStart: string | null = 'rgb(0, 0, 0)';
 	export let gradientBackgroundEnd: string | null = 'rgb(0,0,0)';
-	export let firstColor: string | null = orange;
-	export let secondColor: string | null = orange;
-	export let thirdColor: string | null = orange;
-	export let fourthColor: string | null = lightAqua;
+	export let firstColor: string | null = white;
+	export let secondColor: string | null = white;
+	export let thirdColor: string | null = white;
+	export let fourthColor: string | null = white;
 	export let fifthColor: string | null = deepTurquoise;
 	export let pointerColor: string | null = orange;
 	export let size: string | null = '80%';

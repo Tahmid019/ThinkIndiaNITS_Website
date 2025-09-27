@@ -89,14 +89,14 @@
 						<!-- Alternate Sides on Large Screens -->
 						<div class="w-full px-4 md:w-1/2 {index % 2 === 0 ? 'md:order-1' : ''}">
 							<div
-								class="group rounded-lg border border-slate-800 bg-slate-900/35 p-6 shadow-lg backdrop-blur-md transition-all duration-300 hover:scale-[1.01] hover:bg-white hover:shadow-xl"
+								class="group rounded-lg border border-slate-800 bg-slate-200/35 p-6 shadow-lg backdrop-blur-md transition-all duration-300 hover:scale-[1.001] hover:bg-white hover:shadow-xl"
 							>
 								<h3
-									class="mb-2 text-h5 font-bold text-white transition-all duration-300 group-hover:text-gray-900"
+									class="mb-2 text-h5 font-bold text-slate-500 transition-all duration-300 group-hover:text-gray-900"
 								>
 									{item.title}
 								</h3>
-								<p class="text-small text-gray-300 transition-all duration-300 group-hover:text-gray-700">
+								<p class="text-small text-slate-400 transition-all duration-300 group-hover:text-gray-700">
 									{item.description}
 								</p>
 							</div>
@@ -107,7 +107,7 @@
 							class="-translate-x-1/6 absolute left-1/2 flex transform justify-center px-4 md:static md:w-1/2"
 						>
 							<span
-								class="rounded-full border border-slate-800 bg-slate-900/35 px-6 py-2 text-lg font-semibold text-white shadow-md transition-all duration-300 hover:scale-110 hover:bg-white hover:text-black"
+								class="rounded-full border border-slate-800 bg-slate-200/35 px-6 py-2 text-lg font-semibold text-slate-500 shadow-md transition-all duration-300 hover:scale-[1.001] hover:bg-white hover:text-black"
 							>
 								{item.year}
 							</span>

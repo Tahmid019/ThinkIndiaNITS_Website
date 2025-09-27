@@ -9,38 +9,38 @@
 </script>
 
 <footer
-	class="bg-slate-800/25 px-4 py-6 text-white backdrop-blur-md transition-all duration-300 hover:bg-slate-800/35 lg:py-8"
+	class="bg-slate-200 px-4 py-6 text-black backdrop-blur-md transition-all duration-300 hover:bg-slate-300 lg:py-8"
 >
 	<div class="mx-auto grid max-w-6xl grid-cols-3 gap-6">
 		<!-- Contact Section -->
 		<div>
 			<h2 class="text-[0.9rem] font-semibold md:text-lg lg:text-xl">Contact Us</h2>
-			<p class="mt-1 text-[0.8rem] text-gray-400 md:text-base lg:text-lg">Email: tahmif786.com</p>
-			<p class="text-[0.8rem] text-gray-400 md:text-base lg:text-lg">Phone: +91 99547 22871</p>
+			<p class="mt-1 text-small text-slate-500">Email: tahmif786.com</p>
+			<p class="text-small text-slate-500">Phone: +91 99547 22871</p>
 		</div>
 
 		<!-- Quick Links -->
 		<div>
-			<h2 class="text-[0.9rem] text-base font-semibold md:text-lg lg:text-xl">Quick Links</h2>
+			<h2 class="text-body text-base font-semibold md:text-lg lg:text-xl">Quick Links</h2>
 			<ul class="mt-1 space-y-1 sm:mt-2 sm:space-y-2">
 				<li>
 					<a
 						href="/About"
-						class="text-[0.8rem] text-gray-400 transition hover:text-white md:text-base lg:text-lg"
+						class="text-small text-gray-400 transition hover:text-white"
 						>About Us</a
 					>
 				</li>
 				<li>
 					<a
 						href="/Blog"
-						class="text-[0.8rem] text-gray-400 transition hover:text-white md:text-base lg:text-lg"
+						class="text-small text-gray-400 transition hover:text-white"
 						>Services</a
 					>
 				</li>
 				<li>
 					<a
 						href="/"
-						class="text-[0.8rem] text-gray-400 transition hover:text-white md:text-base lg:text-lg"
+						class="text-small text-gray-400 transition hover:text-white"
 						>Privacy Policy</a
 					>
 				</li>
@@ -56,7 +56,7 @@
 						href={url}
 						target="_blank"
 						aria-label={name}
-						class="text-xl text-gray-400 transition hover:text-white sm:text-2xl"
+						class="text-h6 text-gray-400 transition hover:text-white"
 					>
 						<i class={`fab ${icon}`}></i>
 					</a>

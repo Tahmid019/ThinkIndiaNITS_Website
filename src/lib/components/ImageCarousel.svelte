@@ -31,7 +31,7 @@
 					>
 						<img
 							class={cn(
-								'h-full w-full rounded-lg object-cover opacity-50 grayscale transition-all duration-300 hover:scale-[1.1] hover:opacity-100 hover:grayscale-0',
+								'h-full w-full rounded-lg object-cover opacity-90 grayscale transition-all duration-300 hover:scale-[1.01] hover:opacity-100 hover:grayscale-0',
 								i === 0 && 'h-72 md:h-full', // Adjust height for the first image
 								i === 1 && 'h-36 md:h-72', // Adjust height for the second image
 								i === 2 && 'h-36 md:h-72' // Adjust height for the third image
