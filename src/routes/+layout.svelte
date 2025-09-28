@@ -13,9 +13,9 @@
 	});
 </script>
 
-<!-- <Loading {isLoading} /> -->
+<Loading {isLoading} />
 
-{#if true}
+{#if !isLoading}
 	<Navbar />
 	<slot />
 {/if}
