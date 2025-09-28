@@ -21,7 +21,7 @@
 		<!-- Mobile Menu Button -->
 		<button
 			on:click={() => (isOpen = !isOpen)}
-			class="rounded-lg p-2 text-white hover:bg-white/20 md:hidden"
+			class="rounded-lg p-2 text-black hover:bg-white/20 md:hidden"
 			aria-label="Toggle navigation menu"
 		>
 			<svg
@@ -43,7 +43,7 @@
 		{#if isOpen}
 			<button
 				type="button"
-				class="fixed inset-0 z-0 bg-black/50 backdrop-blur-sm md:hidden"
+				class="fixed inset-0 z-0 backdrop-blur-sm md:hidden"
 				on:click={() => (isOpen = false)}
 				aria-label="Close menu"
 			></button>
@@ -51,7 +51,7 @@
 
 		<!-- Navigation Links -->
 		<div
-			class="fixed left-0 top-0 h-screen w-32 transform bg-black/50 backdrop-blur-xl transition-transform duration-300 ease-in-out md:static md:h-auto md:w-auto md:translate-x-0 md:bg-transparent md:backdrop-blur-none"
+			class="fixed left-0 top-0 h-screen w-32 transform bg-white backdrop-blur-xl transition-transform duration-300 ease-in-out md:static md:h-auto md:w-auto md:translate-x-0 md:bg-transparent md:backdrop-blur-none"
 			class:translate-x-0={isOpen}
 			class:-translate-x-full={!isOpen}
 		>
