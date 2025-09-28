@@ -1,6 +1,14 @@
-<script>
+<script lang="ts">
 	import Think_india_logo from '$lib/assets/think_india.svg';
 	let isOpen = false;
+
+	let NavLinks: Array<{ name: string; link: string }> | null = [
+		{ name: 'Home', link: '/' }, 
+		{ name: 'About', link: '/About' }, 
+		// { name: 'Events', link: '/Event' }, 
+		// { name: 'Blogs', link: '/Blog' }, 
+		// { name: 'Team', link: '/Team' }
+	];
 </script>
 
 <nav class="fixed p-2 left-0 top-0 z-[1000] w-full bg-white/10 shadow-md backdrop-blur-md">
@@ -48,7 +56,7 @@
 			class:-translate-x-full={!isOpen}
 		>
 			<ul class="flex flex-col p-4 md:flex-row md:space-x-6 md:p-0">
-				{#each [{ name: 'Home', link: '/' }, { name: 'About', link: '/About' }, { name: 'Events', link: '/Event' }, { name: 'Blogs', link: '/Blog' }, { name: 'Team', link: '/Team' }] as { name, link }}
+				{#each NavLinks as { name, link }}
 					<li>
 						<a
 							href={link}
