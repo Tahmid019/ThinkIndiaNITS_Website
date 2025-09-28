@@ -7,12 +7,12 @@
 
 	import TextGenerate from './ui/TextGenerate.svelte';
 
-	export let delay: number = 0.2;
-	export let duration: number = 0.9;
+	export let delay: number = 0.09;
+	export let duration: number = 0.4;
 	export let FinanceClubDescription: string =
-		'The Finance and Investment Club at NIT Silchar is a student-driven organization dedicated to enhancing financial literacy and investment knowledge among its members. The club achieves this by conducting workshops, seminars, and interactive events that cover various aspects of finance and investment strategies.';
+		'The Think India chapter at NIT Silchar is a student-driven initiative committed to fostering intellectual growth, cultural awareness, and leadership among its members. The forum achieves this by organizing workshops, seminars, and interactive events that explore diverse themes of policy, education, innovation, and nation-building.';
 	export let FinanceClubDescription2: string =
-		'Through these initiatives, the Finance and Investment Club at NIT Silchar strives to equip students with practical financial skills and insights, preparing them for successful careers in the financial sector. Sources';
+		'Through these initiatives, Think India NIT Silchar strives to nurture a generation of students who are not only academically competent but also socially conscious and culturally rooted. By encouraging discussions on policy, education, innovation, and national development, the forum equips members with the clarity of thought, leadership qualities, and a strong sense of responsibility required to address real-world challenges. In doing so, it prepares students to emerge as visionary leaders who can meaningfully contribute to society and actively participate in building a self-reliant and progressive India.';
 	export let FinanceClubDescription2_color: string = 'text-gray-400';
 	export let FinanceClubDescription2_sizing: string = 'text-small';
 
@@ -54,10 +54,10 @@
 					? 'translate-x-0'
 					: 'translate-x-20'}"
 			>
-				<BlurFade delay={0.05}>
+				<BlurFade delay={0}>
 					<TextGenerate {delay} {duration} text={FinanceClubDescription} />
 				</BlurFade>
-				<BlurFade delay={0.05}>
+				<BlurFade delay={0}>
 					<p class=""></p>
 					<TextGenerate
 						{delay}

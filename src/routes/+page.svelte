@@ -13,7 +13,7 @@
 	<div class="home-container bg-brand-white">
 		<Hero />
 		<About />
-		<Timeline />
+		<!-- <Timeline /> -->
 		<ImageCarousel />
 	</div>
 	<Footer />
