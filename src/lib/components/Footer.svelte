@@ -8,67 +8,55 @@
 	];
 </script>
 
-<footer
-	class="bg-slate-200 px-4 py-6 text-black backdrop-blur-md transition-all duration-300 hover:bg-slate-300 lg:py-8"
->
-	<div class="mx-auto grid max-w-6xl grid-cols-3 gap-6">
+<footer class="bg-white px-4 py-8 text-black backdrop-blur-md transition-all duration-300 lg:py-12">
+	<div class="mx-auto max-w-[85%] grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 text-center">
+		
 		<!-- Contact Section -->
-		<div>
-			<h2 class="text-[0.9rem] font-semibold md:text-lg lg:text-xl">Contact Us</h2>
-			<p class="mt-1 text-small text-slate-500">Email: tahmif786.com</p>
-			<p class="text-small text-slate-500">Phone: +91 99547 22871</p>
+		<div class="flex flex-col items-start">
+			<h2 class="text-small md:text-body font-semibold mb-2">Contact Us</h2>
+			<p class="text-tiny md:text-small text-slate-500">Email: thinkindia@nits.ac.in</p>
+			<p class="text-tiny md:text-small text-slate-500">Phone: +91 99547 22871</p>
 		</div>
 
 		<!-- Quick Links -->
-		<div>
-			<h2 class="text-body text-base font-semibold md:text-lg lg:text-xl">Quick Links</h2>
-			<ul class="mt-1 space-y-1 sm:mt-2 sm:space-y-2">
+		<div class="flex flex-col items-start">
+			<h2 class="text-small md:text-body font-semibold mb-2">Quick Links</h2>
+			<ul class="flex flex-col items-start">
 				<li>
-					<a
-						href="/About"
-						class="text-small text-gray-400 transition hover:text-white"
-						>About Us</a
-					>
+					<a href="/About" class="text-tiny md:text-small text-gray-400 transition hover:text-black">About Us</a>
 				</li>
 				<li>
-					<a
-						href="/Blog"
-						class="text-small text-gray-400 transition hover:text-white"
-						>Services</a
-					>
+					<a href="/Blog" class="text-tiny md:text-small text-gray-400 transition hover:text-black">Services</a>
 				</li>
 				<li>
-					<a
-						href="/"
-						class="text-small text-gray-400 transition hover:text-white"
-						>Privacy Policy</a
-					>
+					<a href="/" class="text-tiny md:text-small text-gray-400 transition hover:text-black">Privacy Policy</a>
 				</li>
 			</ul>
 		</div>
 
 		<!-- Social Media -->
-		<div>
-			<h2 class="font-semibold">Follow Us</h2>
-			<div class="mt-1 flex gap-3 sm:mt-2 sm:gap-4">
+		<div class="flex flex-col items-start">
+			<h2 class="text-small md:text-body font-semibold mb-3">Follow Us</h2>
+			<div class="flex justify-center flex-wrap gap-4">
 				{#each socialLinks as { name, icon, url }}
 					<a
 						href={url}
 						target="_blank"
 						aria-label={name}
-						class="text-h6 text-gray-400 transition hover:text-white"
+						class="text-gray-400 transition transform hover:text-black hover:scale-110"
 					>
-						<i class={`fab ${icon}`}></i>
+						<i class={`fab ${icon} text-2xl sm:text-3xl`}></i>
 					</a>
 				{/each}
 			</div>
 		</div>
+
 	</div>
 
 	<!-- Bottom Section -->
-	<div class="mt-4 pt-4 text-center sm:mt-6">
+	<div class="mt-8 pt-6 border-t border-gray-200 text-center">
 		<p class="text-xs text-gray-500 sm:text-sm">
-			&copy; {year} Finance & Investment Club, NITS. All rights reserved.
+			&copy; {year} Think India, NITS. All rights reserved.
 		</p>
 	</div>
 </footer>
