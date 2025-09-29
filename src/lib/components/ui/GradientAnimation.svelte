@@ -168,7 +168,7 @@
 				`left-[calc(50%-var(--size)/2)] top-[calc(50%-var(--size)/2)] h-[var(--size)] w-[var(--size)] [mix-blend-mode:var(--blending-value)]`,
 				`[transform-origin:calc(50%-800px)_calc(50%+800px)]`,
 				`animate-fifth`,
-				`opacity-25`
+				`opacity-15`
 			)}
 		></div>
 

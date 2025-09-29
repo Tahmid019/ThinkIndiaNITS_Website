@@ -7,7 +7,7 @@
 		{ name: 'About', link: '/About' }, 
 		// { name: 'Events', link: '/Event' }, 
 		// { name: 'Blogs', link: '/Blog' }, 
-		// { name: 'Team', link: '/Team' }
+		{ name: 'Team', link: '/Team' }
 	];
 </script>
 
