@@ -9,6 +9,7 @@
 	import Footer from '$lib/components/Footer.svelte';
 
 	import { seo } from '$lib/index.js';
+	import FloatingChakra from '$lib/components/ui/FloatingChakra.svelte';
 
 	export const prerender = true;
 	export const ssr = true;
@@ -54,6 +55,7 @@
 <GradientAnimation>
 	<div class="home-container bg-brand-white">
 		<Hero />
+		<FloatingChakra />
 		<About />
 		<!-- <Timeline /> -->
 		<ImageCarousel />
